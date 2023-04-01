@@ -82,29 +82,29 @@ export default function Page() {
         {/* About */}
         <section className="max-w-7xl mx-auto px-8 space-y-8 lg:space-y-2">
           <h2 className="font-medium tracking-tight text-3xl">
-            Apicius c'est quoi ?
+            {`Apicius c'est quoi ?`}
           </h2>
           <div className="flex flex-col-reverse gap-y-8 lg:flex-row lg:gap-y-0 lg:gap-x-8">
             <div className="flex-1 space-y-4 lg:py-4">
               <p>
-                Natalia BENOIST a développé en parallèle de son métier de
-                primeur une activité de sculpture sur fruits et légumes.
+                {`Natalia BENOIST a développé en parallèle de son métier de
+                primeur une activité de sculpture sur fruits et légumes.`}
               </p>
               <p>
-                Elle a d'abord commencé par s'amuser en sculptant des fraises en
+                {`Elle a d'abord commencé par s'amuser en sculptant des fraises en
                 forme de rose, la réaction des clients surpris et curieux lui a
                 donné envie de recommencer ! Aujourd'hui elle commercialise ses
                 créations sur commande, fruits ou légumes et pour tout évènement
                 : anniversaire, mariage, Baptêmes Réunion familiale ou pour un
                 simple apéritif. Tout événement est l'occasion de créer la
-                surprise et l'étonnement de vos invités !
+                surprise et l'étonnement de vos invités !`}
               </p>
               <p>
-                De la simple composition à la réalisation d'un buffet
+                {`De la simple composition à la réalisation d'un buffet
                 entièrement "veggie", elle sera répondre à vos attentes et en
                 n'utilisant que ce qu'elle vend en boutique. Chaque commande est
                 personnalisée pour qu'elle soit unique et vous soit totalement
-                dédiée.
+                dédiée.`}
               </p>
             </div>
             <div className="relative overflow-hidden rounded-2xl w-full h-[500px] lg:w-[40%] lg:h-auto">

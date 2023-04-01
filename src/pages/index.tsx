@@ -33,14 +33,17 @@ export default function Home() {
                 delay={5000}
                 childrens={[
                   <Logo
+                    key="logo-pear"
                     artifact="pear"
                     className="h-[80%] w-auto max-w-full text-white"
                   />,
                   <Logo
+                    key="logo-carrot"
                     artifact="carrot"
                     className="h-[80%] w-auto max-w-full text-white"
                   />,
                   <Logo
+                    key="logo-strawberry"
                     artifact="strawberry"
                     className="h-[80%] w-auto max-w-full text-white"
                   />,
@@ -68,63 +71,66 @@ export default function Home() {
               </h2>
 
               <p>
-                Théophile et Natalia BENOIST gèrent ensemble et depuis
+                {`Théophile et Natalia BENOIST gèrent ensemble et depuis
                 maintenant plus de 3 ans le commerce fruits et légumes du centre
                 bourg de Biscarrosse anciennement nommé "Chez Popaul"
-                aujourd'hui appelé "ESPRIT PRIMEUR".
+                aujourd'hui appelé "ESPRIT PRIMEUR".`}
               </p>
               <p>
-                C'est leur 3ème magasin, après avoir passé plusieurs années en
+                {`C'est leur 3ème magasin, après avoir passé plusieurs années en
                 tant que primeur sur la commune de Cestas et Pessac, ils
                 décident de se concentrer sur ce magasin et d'y développer leur
                 savoir-faire, leurs connaissances ainsi que tous les projets
-                qu'ils ont en tête.
+                qu'ils ont en tête.`}
               </p>
               <p>
-                Amoureux de leur métier, ils ont décroché en février 2023 le
+                {`Amoureux de leur métier, ils ont décroché en février 2023 le
                 titre de "Talent fruits et légumes" d'abord sur la région grand
-                Sud-Ouest puis au niveau national.
+                Sud-Ouest puis au niveau national.`}
               </p>
               <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
-                <span className="font-semibold">{`Théophile : `}</span>La plus
+                <span className="font-semibold">{`Théophile : `}</span>
+                {`La plus
                 belle des récompenses et la reconnaissance de notre travail par
                 nos pairs, une grande fierté pour nous, notre équipe et nos
-                clients.
+                clients.`}
               </blockquote>
               <p>
-                Commerçants avant tout, ils sont dans la démarche active d'être
+                {`Commerçants avant tout, ils sont dans la démarche active d'être
                 aussi reconnus comme artisans. En effet, ils ne se contentent
                 pas seulement de revendre des fruits et légumes, ils essaient
                 aussi dans une démarche anti-gaspillage de valoriser les
                 produits destinés à être jetés par la transformation de certains
                 produits en confiture artisanales, en confiseries, en jus de
-                fruits, en conserves.
+                fruits, en conserves.`}
               </p>
               <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
-                <span className="font-semibold">{`Natalia : `}</span>Dans notre
+                <span className="font-semibold">{`Natalia : `}</span>
+                {`Dans notre
                 domaine d'activité il y a énormément de gaspillage alimentaire,
                 Il fallait trouver une solution pour y remédier, c'est pour cela
                 que la transformation de certains produits est une idée qui
-                s'est naturellement mise en place.
+                s'est naturellement mise en place.`}
               </blockquote>
               <p>
-                Théophile et Natalia ont encore une multitude d'idées à mettre
+                {`Théophile et Natalia ont encore une multitude d'idées à mettre
                 en place, afin de développer les prestations proposées à leurs
                 clients mais toujours autour du fruit et du légumes, et toujours
-                dans le but de les satisfaire !
+                dans le but de les satisfaire !`}
               </p>
               <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
-                <span className="font-semibold">{`Théophile : `}</span>Ces
+                <span className="font-semibold">{`Théophile : `}</span>
+                {`Ces
                 projets ne seraient pas envisageables si nous n'avions pas cette
-                équipe !"
+                équipe !`}
               </blockquote>
               <p>
-                L'équipe ESPRIT PRIMEUR se compose de Josiane, Alexandre et
+                {`L'équipe ESPRIT PRIMEUR se compose de Josiane, Alexandre et
                 Alexia. Équipe compétente et soudée elle saura vous accueillir
                 tout au long de la journée avec le sourire et pour vous
-                conseiller lors de vos achats.
+                conseiller lors de vos achats.`}
               </p>
-              <p>L'équipe vous attend nombreux !</p>
+              <p>{`L'équipe vous attend nombreux !`}</p>
             </div>
           </div>
         </section>

@@ -26,21 +26,21 @@ export default function Page() {
         renderDetails={
           <>
             <p>
-              Les buffets que je propose sont élaborés en fonction de vos
-              envies, de vos goûts et surtout de votre budget.
+              {`Les buffets que je propose sont élaborés en fonction de vos
+              envies, de vos goûts et surtout de votre budget.`}
             </p>
             <p>
-              Je réalise des buffets principalement "veggie", je peux vous
+              {`Je réalise des buffets principalement "veggie", je peux vous
               proposer des verrines/mignardises comprenant un peu de fromage ou
-              de charcuterie, l'utilisation d'autres produits l'été.
+              de charcuterie, l'utilisation d'autres produits l'été.`}
             </p>
           </>
         }
         renderPrices={
           <>
             <p>
-              Les tarifs sont à définir en fonction de vos envies, demande sur
-              devis
+              {`Les tarifs sont à définir en fonction de vos envies, demande sur
+              devis`}
             </p>
             <div className="flex flex-col gap-y-2 pt-4">
               <span className="font-bold">
@@ -53,18 +53,18 @@ export default function Page() {
                 personne)
               </ProductPriceBullet>
               <ProductPriceBullet>
-                Gauffres sucrées et sélection de confitures faites maison (2
-                parfums)
+                {`Gauffres sucrées et sélection de confitures faites maison (2
+                parfums)`}
               </ProductPriceBullet>
               <ProductPriceBullet>
-                1 jus de fruits frais (orange et/ou smoothie avec des fruits de
-                saison)
+                {`1 jus de fruits frais (orange et/ou smoothie avec des fruits de
+                saison)`}
               </ProductPriceBullet>
               <ProductPriceBullet>
-                1 salade de fruits (fruits de saison)
+                {`1 salade de fruits (fruits de saison)`}
               </ProductPriceBullet>
               <ProductPriceBullet>
-                2 assortiments de crudités en libre-service
+                {`2 assortiments de crudités en libre-service`}
               </ProductPriceBullet>
               <ProductPriceBullet>
                 {`2 sauces tartinables au choix : Houmous, caviar d'aubergine,
@@ -72,10 +72,10 @@ export default function Page() {
                 pain`}
               </ProductPriceBullet>
               <ProductPriceBullet>
-                Gaufres salées (choix du légumes, recommandé courgette)
+                {`Gaufres salées (choix du légumes, recommandé courgette)`}
               </ProductPriceBullet>
               <ProductPriceBullet>
-                Assortiments de fruits frais
+                {`Assortiments de fruits frais`}
               </ProductPriceBullet>
             </div>
           </>
