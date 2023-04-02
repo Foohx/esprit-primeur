@@ -2,9 +2,40 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Logo from "@/components/logo";
 import Switcher from "@/components/switcher";
+import { IconDeviceMobile, IconMail, IconMapPin } from "@tabler/icons-react";
 import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+
+const hours = [
+  { day: "", hours: [["Haute saison"], ["Basse saison"]] },
+  { day: "Lundi", hours: [["Fermé"], ["Fermé"]] },
+  {
+    day: "Mardi",
+    hours: [["08:30 - 19:30"], ["08:30 - 13:00", "15:00 - 19:30"]],
+  },
+  {
+    day: "Mercredi",
+    hours: [["08:30 - 19:30"], ["08:30 - 13:00", "15:00 - 19:30"]],
+  },
+  {
+    day: "Jeudi",
+    hours: [["08:30 - 19:30"], ["08:30 - 13:00", "15:00 - 19:30"]],
+  },
+  {
+    day: "Vendredi",
+    hours: [["08:30 - 19:30"], ["08:30 - 13:00", "15:00 - 19:30"]],
+  },
+  {
+    day: "Samedi",
+    hours: [["08:30 - 19:30"], ["08:30 - 13:00", "15:00 - 19:30"]],
+  },
+  {
+    day: "Dimanche",
+    hours: [["08:30 - 13:30"], ["08:30 - 13:00", "15:00 - 19:30"]],
+  },
+];
 
 export default function Home() {
   return (
@@ -16,7 +47,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="space-y-32">
+      <main>
         {/* Hero */}
         <section className="bg-[url('/images/hero.jpg')] bg-cover bg-no-repeat bg-center h-[80vh]">
           <div
@@ -54,7 +85,7 @@ export default function Home() {
           </div>
         </section>
         {/* About */}
-        <section className="max-w-7xl mx-auto">
+        <section id="about" className="py-32 max-w-7xl mx-auto">
           <div className="flex flex-row">
             <div className="flex-1 bg-red-50">
               <Image
@@ -135,29 +166,140 @@ export default function Home() {
           </div>
         </section>
         {/* Promotion */}
-        <section className="max-w-7xl mx-auto">
-          <iframe
-            width="343"
-            height="610"
-            src="https://www.youtube.com/embed/mcF12tmkEmE"
-            title="découverte du magasin esprit primeur - BISCARROSSE"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
+        <section className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-300 via-primary-500 to-primary-700">
+          <div className="w-full max-w-7xl mx-auto flex flex-col justify-center items-center py-32 gap-y-8">
+            <h2 className="font-medium tracking-tight text-3xl text-white">
+              Faites un tour du magasin
+            </h2>
+            <iframe
+              className="overflow-hidden rounded-2xl"
+              width="343"
+              height="610"
+              src="https://www.youtube.com/embed/mcF12tmkEmE"
+              title="découverte du magasin esprit primeur - BISCARROSSE"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </div>
         </section>
+
         {/* Shop */}
-        <section className="max-w-7xl mx-auto">
-          <div className="bg-[url('/images/shop.jpg')] bg-cover bg-no-repeat bg-center">
-            <div className="bg-black/20">
-              <div className="mx-auto py-32">
-                <h2 className="font-medium tracking-tight text-3xl">
-                  Le magasin
-                </h2>
+        <section id="shop" className="py-32 space-y-8">
+          <div className="max-w-7xl mx-auto h-[40vh] max-h-[300px] px-4">
+            <div className="rounded-2xl overflow-hidden h-full w-full relative group">
+              <Image
+                src="/images/shop.jpg"
+                alt=""
+                width={800}
+                height={500}
+                className="object-cover w-full h-full"
+              />
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-black/0 group-hover:opacity-0 transition-opacity duration-300 flex items-end">
+                <div className="p-8">
+                  <h2 className="font-medium tracking-tight text-3xl text-white">
+                    Notre magasin
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex">
-            <div className="flex-1">Infos</div>
-            <div className="flex-1 bg-red-50">MAP</div>
+          <div className="w-full h-full max-w-7xl mx-auto px-4 flex flex-col gap-y-8 lg:px-12 lg:flex-row lg:gap-y-0 lg:gap-x-8">
+            <div className="flex-1 space-y-4">
+              <h3 className="font-medium tracking-tight text-3xl">
+                Esprit Primeur Biscarosse
+              </h3>
+              <div className="space-y-4 divide-y">
+                <div className="space-y-2 py-4 text-gray-700">
+                  <div className="flex gap-x-1">
+                    <div>
+                      <IconMapPin />
+                    </div>
+                    <span>
+                      91 Avenue Georges Clemenceau
+                      <br />
+                      40600 Biscarrosse
+                    </span>
+                  </div>
+                  <Link
+                    className="flex gap-x-1 text-primary-600 group"
+                    href="tel:0558820979"
+                  >
+                    <div>
+                      <IconDeviceMobile />
+                    </div>
+                    <span className="font-semibold group-hover:underline">
+                      05 58 82 09 79
+                    </span>
+                  </Link>
+                  <Link
+                    className="flex gap-x-1 text-primary-600 group"
+                    href="mailto:popaulbisca@gmail.com"
+                  >
+                    <div>
+                      <IconMail />
+                    </div>
+                    <span className="font-semibold group-hover:underline">
+                      popaulbisca@gmail.com
+                    </span>
+                  </Link>
+                </div>
+                <div className="py-4 space-y-4">
+                  {/* Hours */}
+                  <div>
+                    {hours.map((day, dayIdx) => (
+                      <div
+                        key={`${dayIdx}`}
+                        className={classNames("px-2 py-1 flex gap-x-1", {
+                          "bg-gray-50": dayIdx > 0 && dayIdx % 2 === 1,
+                        })}
+                      >
+                        <div className="flex-1">
+                          <span>{day.day}</span>
+                        </div>
+                        <div className="flex-1 flex gap-x-4">
+                          {day.hours.map((hour, hourIdx) => (
+                            <div
+                              key={`${dayIdx}-${hourIdx}`}
+                              className="flex-1 text-center flex flex-col"
+                            >
+                              {hour.map((time, timeIdx) => (
+                                <span
+                                  key={`${dayIdx}-${hourIdx}-${timeIdx}`}
+                                  className={classNames(
+                                    "whitespace-nowrap",
+                                    dayIdx === 0 ? "font-semibold" : undefined
+                                  )}
+                                >
+                                  {time}
+                                </span>
+                              ))}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  {/* Hours Informations */}
+                  <div className="flex flex-col gap-y-1 italic text-gray-700">
+                    <span>
+                      <span className="font-medium">{`* Haute saison :`}</span>
+                      {` Juin, juillet et août`}
+                    </span>
+                    <span>
+                      <span className="font-medium">{`* Basse saison :`}</span>
+                      {` Reste de l'année`}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="h-[400px] lg:h-auto lg:flex-1">
+              <iframe
+                className="w-full h-full overflow-hidden rounded-2xl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1425.409654113128!2d-1.166560641278076!3d44.39583079999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5480831e4e94e1%3A0x389b8b0ca2031dfb!2s91%20Av.%20Georges%20Clemenceau%2C%2040600%20Biscarrosse!5e0!3m2!1sfr!2sfr!4v1680431157838!5m2!1sfr!2sfr"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </section>
       </main>

@@ -84,50 +84,6 @@ export default function ProductPage({
             </div>
           </div>
         </div>
-
-        {/* <p>
-        Les buffets que je propose sont élaborés en fonction de vos envies,
-        de vos goûts et surtout de votre budget.
-      </p>
-      <p>
-        Je réalise des buffets principalement "veggie", je peux vous
-        proposer des verrines/mignardises comprenant un peu de fromage ou de
-        charcuterie, l'utilisation d'autres produits l'été.
-      </p>
-      <p>
-        Les tarifs sont à définir en fonction de vos envies, demande sur
-        devis.
-      </p>
-      <p>
-        Pour vos lendemains de festivités, je vous propose une formule
-        brunch pour 20€ par personnes comprenant :
-      </p>
-      <ul>
-        <li>Viennoiseries (2 mini par personnes)</li>
-        <li>
-          Gauffres sucrées et sélection de confitures faites maison
-          (2parfums)
-        </li>{" "}
-        <li>
-          1 jus de fruits frais (orange et/ou smoothie avec des fruits de
-          saison)
-        </li>
-        <li>1 salade de fruits (fruits de saison)</li>
-        <li>2 assortiments de crudités en libre-service</li>
-        <li>
-          2 sauces tartinables au choix : Houmous / Caviar d'aubergine /
-          Guacamole / Tapenade verte ou noire / Tomatade (faites maison) +
-          pain
-        </li>
-        <li>
-          Gaufres salées (choix du légumes, recommandé courgette
-          Assortiments de fruits frais
-        </li>
-      </ul>
-      <p>
-        Faites votre commande soit par mail, soit par téléphone.
-        benoistnatalia@gmail.com 06 31 98 26 31
-      </p> */}
       </section>
     </main>
   );

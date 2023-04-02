@@ -5,8 +5,8 @@ import { useState } from "react";
 import Logo from "./logo";
 
 const navigation = [
-  { name: "À propos", href: "#" },
-  { name: "Le magasin", href: "#" },
+  { name: "À propos", href: "/#about" },
+  { name: "Notre magasin", href: "/#shop" },
   { name: "Apicius", href: "/apicius" },
   // { name: "Company", href: "#" },
 ];
