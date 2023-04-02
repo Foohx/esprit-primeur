@@ -144,7 +144,7 @@ export default function Page() {
                     "flex flex-col justify-end items-center",
                     "p-4",
                     "bg-gradient-to-t from-black/70 to-black/0",
-                    "opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    "group-hover:opacity-0 transition-opacity duration-300"
                   )}
                 >
                   <h3 className="text-lg font-medium text-center text-white">
