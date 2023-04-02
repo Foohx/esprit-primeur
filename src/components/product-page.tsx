@@ -27,7 +27,7 @@ export default function ProductPage({
   renderPrices,
 }: ProductPageProps) {
   return (
-    <main className="space-y-8 mb-32">
+    <main className="space-y-8 mb-16 lg:mb-32">
       {/* Head */}
       <section className="max-w-7xl mx-auto h-[60vh] max-h-[500px] px-4">
         <div className="rounded-2xl overflow-hidden h-full w-full relative group">

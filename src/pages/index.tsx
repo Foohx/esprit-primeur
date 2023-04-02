@@ -85,22 +85,24 @@ export default function Home() {
           </div>
         </section>
         {/* About */}
-        <section id="about" className="py-32 max-w-7xl mx-auto">
-          <div className="flex flex-row">
-            <div className="flex-1 bg-red-50">
+        <section
+          id="about"
+          className="py-16 lg:py-32 max-w-7xl mx-auto flex flex-col gap-y-8 px-4"
+        >
+          <h2 className="font-medium tracking-tight text-3xl">
+            Qui sommes-nous ?
+          </h2>
+          <div className="flex flex-col gap-y-8 lg:block lg:flex-none lg:gap-y-0">
+            <div className="w-full h-[500px] lg:float-left lg:mr-8 lg:mb-4 lg:w-[40%]">
               <Image
                 src="/images/about.jpg"
                 width={700}
                 height={700}
                 alt="Test"
-                className="object-cover w-full h-full object-center"
+                className="object-cover h-full w-full object-top lg:object-center rounded-2xl"
               />
             </div>
-            <div className="flex-1 space-y-4 px-8 py-4">
-              <h2 className="font-medium tracking-tight text-3xl">
-                Qui sommes-nous ?
-              </h2>
-
+            <div className="space-y-4">
               <p>
                 {`Théophile et Natalia BENOIST gèrent ensemble et depuis
                 maintenant plus de 3 ans le commerce fruits et légumes du centre
@@ -119,13 +121,13 @@ export default function Home() {
                 titre de "Talent fruits et légumes" d'abord sur la région grand
                 Sud-Ouest puis au niveau national.`}
               </p>
-              <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
-                <span className="font-semibold">{`Théophile : `}</span>
-                {`La plus
-                belle des récompenses et la reconnaissance de notre travail par
-                nos pairs, une grande fierté pour nous, notre équipe et nos
-                clients.`}
-              </blockquote>
+              <div className="flex">
+                <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
+                  <span className="font-semibold">{`Théophile : `}</span>
+                  {`La plus belle des récompenses et la reconnaissance de notre travail par
+                  nos pairs, une grande fierté pour nous, notre équipe et nos clients.`}
+                </blockquote>
+              </div>
               <p>
                 {`Commerçants avant tout, ils sont dans la démarche active d'être
                 aussi reconnus comme artisans. En effet, ils ne se contentent
@@ -135,26 +137,28 @@ export default function Home() {
                 produits en confiture artisanales, en confiseries, en jus de
                 fruits, en conserves.`}
               </p>
-              <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
-                <span className="font-semibold">{`Natalia : `}</span>
-                {`Dans notre
-                domaine d'activité il y a énormément de gaspillage alimentaire,
-                Il fallait trouver une solution pour y remédier, c'est pour cela
-                que la transformation de certains produits est une idée qui
-                s'est naturellement mise en place.`}
-              </blockquote>
+              <div className="flex">
+                <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
+                  <span className="font-semibold">{`Natalia : `}</span>
+                  {`Dans notre domaine d'activité il y a énormément de gaspillage
+                  alimentaire, Il fallait trouver une solution pour y remédier,
+                  c'est pour cela que la transformation de certains produits est
+                  une idée qui s'est naturellement mise en place.`}
+                </blockquote>
+              </div>
               <p>
                 {`Théophile et Natalia ont encore une multitude d'idées à mettre
                 en place, afin de développer les prestations proposées à leurs
                 clients mais toujours autour du fruit et du légumes, et toujours
                 dans le but de les satisfaire !`}
               </p>
-              <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
-                <span className="font-semibold">{`Théophile : `}</span>
-                {`Ces
-                projets ne seraient pas envisageables si nous n'avions pas cette
-                équipe !`}
-              </blockquote>
+              <div className="flex">
+                <blockquote className="border-l-4 border-gray-300 px-4 text-gray-700">
+                  <span className="font-semibold">{`Théophile : `}</span>
+                  {`Ces projets ne seraient pas envisageables si nous n'avions pas 
+                  cette équipe !`}
+                </blockquote>
+              </div>
               <p>
                 {`L'équipe ESPRIT PRIMEUR se compose de Josiane, Alexandre et
                 Alexia. Équipe compétente et soudée elle saura vous accueillir
@@ -165,9 +169,10 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* Promotion */}
         <section className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-300 via-primary-500 to-primary-700">
-          <div className="w-full max-w-7xl mx-auto flex flex-col justify-center items-center py-32 gap-y-8">
+          <div className="w-full max-w-7xl mx-auto flex flex-col justify-center items-center py-16 lg:py-32 gap-y-8">
             <h2 className="font-medium tracking-tight text-3xl text-white">
               Faites un tour du magasin
             </h2>
@@ -183,7 +188,7 @@ export default function Home() {
         </section>
 
         {/* Shop */}
-        <section id="shop" className="py-32 space-y-8">
+        <section id="shop" className="py-16 lg:py-32 space-y-8">
           <div className="max-w-7xl mx-auto h-[40vh] max-h-[300px] px-4">
             <div className="rounded-2xl overflow-hidden h-full w-full relative group">
               <Image
