@@ -2,8 +2,13 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ProductPage from "@/components/product-page";
 import ProductPriceBullet from "@/components/product-price-bullet";
-import { IconChevronRight } from "@tabler/icons-react";
 import Head from "next/head";
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
 
 export default function Page() {
   return (

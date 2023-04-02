@@ -28,6 +28,12 @@ const products = [
   },
 ];
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 export default function Page() {
   return (
     <>
@@ -58,24 +64,6 @@ export default function Page() {
                 width={500}
                 alt=""
               />
-              {/* <Switcher
-                delay={5000}
-                childrens={[
-                  <Logo
-                    artifact="pear"
-                    className="h-[80%] w-auto max-w-full text-white"
-                  />,
-                  <Logo
-                    artifact="carrot"
-                    className="h-[80%] w-auto max-w-full text-white"
-                  />,
-                  <Logo
-                    artifact="strawberry"
-                    className="h-[80%] w-auto max-w-full text-white"
-                  />,
-                ]}
-                childrenClassName="w-full h-full flex flex-col items-center justify-center"
-              /> */}
             </div>
           </div>
         </section>

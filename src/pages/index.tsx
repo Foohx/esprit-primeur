@@ -37,7 +37,13 @@ const hours = [
   },
 ];
 
-export default function Home() {
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
+export default function Page() {
   return (
     <>
       <Head>
