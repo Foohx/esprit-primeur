@@ -81,7 +81,7 @@ export default function Page() {
           </>
         }
       />
-      <Footer />
+      <Footer mode="apicius" />
     </>
   );
 }
