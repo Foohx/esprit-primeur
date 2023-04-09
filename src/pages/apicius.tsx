@@ -46,10 +46,10 @@ export default function Page() {
       <Header />
       <main className="space-y-16 mb-16 lg:space-y-32 lg:mb-32">
         {/* Hero */}
-        <section className="bg-[url('/images/apicius/hero.jpg')] bg-cover bg-no-repeat bg-center h-[80vh]">
+        <section className="bg-[url('/images/apicius/hero.jpg')] bg-cover bg-no-repeat bg-center h-[85vh]">
           <div
             className={classNames(
-              "bg-black/60",
+              "bg-black/70",
               "backdrop-blur-sm",
               "h-full w-full",
               "flex items-center justify-center"
