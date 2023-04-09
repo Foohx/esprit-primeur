@@ -219,7 +219,7 @@ export default function Page() {
                 height={500}
                 className="object-cover w-full h-full"
               />
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-black/0 group-hover:opacity-0 transition-opacity duration-300 flex items-end">
+              <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-black/0 group-hover:opacity-0 transition-opacity duration-300 flex items-end">
                 <div className="p-8">
                   <h2 className="font-medium tracking-tight text-3xl text-white">
                     Notre magasin

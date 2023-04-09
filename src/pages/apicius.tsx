@@ -127,6 +127,7 @@ export default function Page() {
                 />
                 <div
                   className={classNames(
+                    "rounded-2xl",
                     "absolute left-0 top-0",
                     "w-full h-full",
                     "flex flex-col justify-end items-center",

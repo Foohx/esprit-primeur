@@ -40,7 +40,7 @@ export default function ProductPage({
             height={500}
             className="object-cover w-full h-full"
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-black/0 group-hover:opacity-0 transition-opacity duration-300 flex items-end">
+          <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-black/0 group-hover:opacity-0 transition-opacity duration-300 flex items-end">
             <div className="p-8">
               <h1 className="font-medium tracking-tight text-5xl text-white">
                 {value.name}
