@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Mentions légales", href: "#" },
-  { name: "Conditions Générales de Vente", href: "#" },
+  { name: "Mentions légales", href: "/mentions" },
+  { name: "CGV", href: "/sale-terms" },
   { name: "Contactez-nous", href: "/#shop" },
 ];
 

@@ -192,7 +192,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
         {/* Promotion */}
         <section className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-300 via-primary-500 to-primary-700">
           <div className="w-full max-w-7xl mx-auto flex flex-col justify-center items-center py-16 lg:py-32 gap-y-8">
@@ -209,7 +208,6 @@ export default function Page() {
             ></iframe>
           </div>
         </section>
-
         {/* Shop */}
         <section id="shop" className="py-16 lg:py-32 space-y-8">
           <div className="max-w-7xl mx-auto h-[40vh] max-h-[300px] px-4">

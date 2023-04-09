@@ -25,7 +25,7 @@ export default function Page() {
           name: "Les buffets",
           assets: "/images/apicius/products/buffets",
           assetsConfig: {
-            detailsExtension: "gif",
+            detailsExtension: "jpg",
           },
         }}
         renderDetails={
@@ -43,14 +43,56 @@ export default function Page() {
         }
         renderPrices={
           <>
-            <p>
-              {`Les tarifs sont à définir en fonction de vos envies, demande sur
-              devis`}
+            <div className="flex flex-col gap-y-2 pt-4">
+              <span className="font-bold">{`Buffets :`}</span>
+              <ProductPriceBullet>{`Jus d'orange`}</ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Jus de pomme ou thé glacé`}
+              </ProductPriceBullet>
+              <ProductPriceBullet>{`Lait`}</ProductPriceBullet>
+              <ProductPriceBullet>{`Café`}</ProductPriceBullet>
+              <ProductPriceBullet>{`Viennoiseries`}</ProductPriceBullet>
+              <ProductPriceBullet>{`Cake à la banane `}</ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Clafoutis aux fruits de saison`}
+              </ProductPriceBullet>
+              <ProductPriceBullet>{`Salade de fruits`}</ProductPriceBullet>
+              <ProductPriceBullet>{`Plateaux de fruits`}</ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Confiture maison aux fruits de saison`}
+              </ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Caramel beurre salé ou praliné maison`}
+              </ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Fraises en forme de rose`}
+              </ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Plateau de charcuterie et de fromage`}
+              </ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Sauces tartinables : Guacamole / Caviar d'aubergine / Tapenade`}
+              </ProductPriceBullet>
+              <ProductPriceBullet>{`Pintxos`}</ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Cakes aux olives / Tomates et poivrons `}
+              </ProductPriceBullet>
+              <ProductPriceBullet>
+                {`Brochettes de crudités`}
+              </ProductPriceBullet>
+            </div>
+            <p className="pt-4">
+              Les tarifs sont définis{" "}
+              <span className="underline font-semibold">
+                en fonction de vos envies
+              </span>
+              , demande{" "}
+              <span className="underline font-semibold">sur devis</span>.
             </p>
             <div className="flex flex-col gap-y-2 pt-4">
               <span className="font-bold">
                 {`Pour vos lendemains de festivités, je vous propose une formule
-                brunch pour 20€ par personnes comprenant :`}
+                brunch pour 24€ par personnes comprenant :`}
               </span>
               <ProductPriceBullet>
                 Viennoiseries (
