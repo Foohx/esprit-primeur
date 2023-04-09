@@ -1,12 +1,16 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Logo from "@/components/logo";
-import Switcher from "@/components/switcher";
 import { IconDeviceMobile, IconMail, IconMapPin } from "@tabler/icons-react";
 import classNames from "classnames";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-flip";
+import { Autoplay, EffectFlip } from "swiper";
 
 const hours = [
   { day: "", hours: [["Haute saison"], ["Basse saison"]] },
@@ -55,38 +59,51 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="bg-[url('/images/hero.jpg')] bg-cover bg-no-repeat bg-center h-[80vh]">
+        <section className="bg-[url('/images/hero.jpg')] bg-cover bg-no-repeat bg-center h-[85vh]">
           <div
             className={classNames(
-              "bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-black/30 to-black/70",
+              "bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-black/40 to-black/80",
               "backdrop-blur-sm",
               "h-full w-full",
               "flex items-center justify-center"
             )}
           >
-            <div className="w-full h-full max-w-7xl p-8">
+            <div className="w-full h-full max-w-7xl px-8 py-4">
               <h1 className="sr-only">Esprit Primeur</h1>
-              <Switcher
-                delay={5000}
-                childrens={[
+              <Swiper
+                modules={[Autoplay, EffectFlip]}
+                effect="flip"
+                flipEffect={{
+                  slideShadows: false,
+                }}
+                spaceBetween={0}
+                slidesPerView={1}
+                loop={true}
+                className="w-full h-full"
+                autoplay={{
+                  delay: 4000,
+                  disableOnInteraction: false,
+                }}
+              >
+                <SwiperSlide>
                   <Logo
-                    key="logo-pear"
                     artifact="pear"
-                    className="h-[80%] w-auto max-w-full text-white"
-                  />,
+                    className="h-full w-auto max-w-full text-white mx-auto"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
                   <Logo
-                    key="logo-carrot"
                     artifact="carrot"
-                    className="h-[80%] w-auto max-w-full text-white"
-                  />,
+                    className="h-full w-auto max-w-full text-white mx-auto"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
                   <Logo
-                    key="logo-strawberry"
                     artifact="strawberry"
-                    className="h-[80%] w-auto max-w-full text-white"
-                  />,
-                ]}
-                childrenClassName="w-full h-full flex flex-col items-center justify-center"
-              />
+                    className="h-full w-auto max-w-full text-white mx-auto"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </section>
