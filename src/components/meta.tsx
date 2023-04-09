@@ -1,12 +1,15 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
+const HOST = "https://esprit-primeur.fr";
+
 export type MetaProps = {
   title?: string;
   description?: string;
+  image?: string;
 };
 
-export default function Meta({ title, description }: MetaProps) {
+export default function Meta({ title, description, image }: MetaProps) {
   const router = useRouter();
 
   const fullTitle =
@@ -14,8 +17,8 @@ export default function Meta({ title, description }: MetaProps) {
       ? `${title} | Esprit Primeur`
       : "Esprit Primeur : Chez Nat et Théo";
 
-  const fullUrl = `https://esprit-primeur.fr${router.asPath}`;
-  console.log(fullUrl);
+  const fullUrl = `${HOST}${router.asPath}`;
+  const fullImage = image ? `${HOST}${image}` : undefined;
 
   return (
     <Head>
@@ -54,8 +57,9 @@ export default function Meta({ title, description }: MetaProps) {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={fullTitle} />
       {description && <meta property="og:description" content={description} />}
-      <meta property="og:image" content="/images/apicius/hero.jpg" />
+      {fullImage && <meta property="og:image" content={fullImage} />}
       <meta property="og:url" content={fullUrl} />
+
       {/* General */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {description && <meta name="description" content={description} />}
