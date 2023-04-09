@@ -34,9 +34,9 @@ export default function Page() {
               envies, de vos goûts et surtout de votre budget.`}
             </p>
             <p>
-              {`Je réalise des buffets principalement "veggie", je peux vous
-              proposer des verrines/mignardises comprenant un peu de fromage ou
-              de charcuterie, l'utilisation d'autres produits l'été.`}
+              {`Je réalise des buffets principalement "veggie", mais je peux vous
+              proposer des verrines/mignardises comprenant un peu de fromage, 
+              de charcuterie ou encore d'autres produits durant l'été.`}
             </p>
           </>
         }
