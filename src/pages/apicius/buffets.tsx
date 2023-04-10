@@ -42,6 +42,9 @@ export default function Page() {
         }
         renderPrices={
           <>
+            <div className="flex flex-col gap-y-2 pt-4">
+              <span className="font-bold">{`Buffet :`}</span>
+            </div>
             <p className="pt-4">
               Les tarifs sont à définir{" "}
               <span className="underline font-semibold">
