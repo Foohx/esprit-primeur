@@ -1,8 +1,10 @@
 import {
+  IconBrandInstagram,
   IconChevronRight,
   IconDeviceMobile,
   IconMail,
 } from "@tabler/icons-react";
+import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -40,12 +42,29 @@ export default function ProductPage({
             height={500}
             className="object-cover w-full h-full"
           />
-          <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-black/0 group-hover:opacity-0 transition-opacity duration-300 flex items-end">
+          <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-black/0 lg:group-hover:opacity-0 transition-opacity duration-300 flex items-end">
             <div className="p-8">
               <h1 className="font-medium tracking-tight text-5xl text-white">
                 {value.name}
               </h1>
             </div>
+          </div>
+          <div className="absolute top-0 left-0 p-8 w-full flex justify-end">
+            <Link
+              className={classNames(
+                "rounded-full",
+                "py-2 px-4",
+                "bg-gradient-to-br from-yellow-500 via-red-500 to-purple-500",
+                "text-white",
+                "opacity-80 hover:opacity-100 transition-opacity duration-300",
+                "flex gap-x-2"
+              )}
+              href="https://www.instagram.com/apiciusbordeaux/"
+              target="_blank"
+            >
+              <IconBrandInstagram />
+              <span>Plus de photos</span>
+            </Link>
           </div>
         </div>
       </section>
