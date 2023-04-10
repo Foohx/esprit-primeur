@@ -42,8 +42,19 @@ export default function Page() {
         }
         renderPrices={
           <>
+            <p className="pt-4">
+              Les tarifs sont à définir{" "}
+              <span className="underline font-semibold">
+                en fonction de vos envies
+              </span>
+              , demande{" "}
+              <span className="underline font-semibold">sur devis</span>.
+            </p>
             <div className="flex flex-col gap-y-2 pt-4">
-              <span className="font-bold">{`Buffets :`}</span>
+              <span className="font-bold">
+                {`Pour vos lendemains de festivités, je vous propose une formule
+                brunch pour 24€ par personnes comprenant :`}
+              </span>
               <ProductPriceBullet>{`Jus d'orange`}</ProductPriceBullet>
               <ProductPriceBullet>
                 {`Jus de pomme ou thé glacé`}
@@ -78,50 +89,6 @@ export default function Page() {
               </ProductPriceBullet>
               <ProductPriceBullet>
                 {`Brochettes de crudités`}
-              </ProductPriceBullet>
-            </div>
-            <p className="pt-4">
-              Les tarifs sont définis{" "}
-              <span className="underline font-semibold">
-                en fonction de vos envies
-              </span>
-              , demande{" "}
-              <span className="underline font-semibold">sur devis</span>.
-            </p>
-            <div className="flex flex-col gap-y-2 pt-4">
-              <span className="font-bold">
-                {`Pour vos lendemains de festivités, je vous propose une formule
-                brunch pour 24€ par personnes comprenant :`}
-              </span>
-              <ProductPriceBullet>
-                Viennoiseries (
-                <span className="underline font-semibold">minimum 2</span> par
-                personne)
-              </ProductPriceBullet>
-              <ProductPriceBullet>
-                {`Gauffres sucrées et sélection de confitures faites maison (2
-                parfums)`}
-              </ProductPriceBullet>
-              <ProductPriceBullet>
-                {`1 jus de fruits frais (orange et/ou smoothie avec des fruits de
-                saison)`}
-              </ProductPriceBullet>
-              <ProductPriceBullet>
-                {`1 salade de fruits (fruits de saison)`}
-              </ProductPriceBullet>
-              <ProductPriceBullet>
-                {`2 assortiments de crudités en libre-service`}
-              </ProductPriceBullet>
-              <ProductPriceBullet>
-                {`2 sauces tartinables au choix : Houmous, caviar d'aubergine,
-                guacamole, tapenade verte ou noire ou Tomatade (faites maison) +
-                pain`}
-              </ProductPriceBullet>
-              <ProductPriceBullet>
-                {`Gaufres salées (choix du légumes, recommandé courgette)`}
-              </ProductPriceBullet>
-              <ProductPriceBullet>
-                {`Assortiments de fruits frais`}
               </ProductPriceBullet>
             </div>
           </>
