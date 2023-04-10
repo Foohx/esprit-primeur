@@ -234,6 +234,9 @@ export default function Page() {
               </p>
             </div>
           </div>
+          <div className="space-y-4">
+            <p className="underline">{`Fait à Cestas, le 8 mars 2021`}</p>
+          </div>
         </section>
       </main>
       <Footer />
