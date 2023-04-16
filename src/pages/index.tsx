@@ -197,11 +197,12 @@ export default function Page() {
               Faites un tour du magasin
             </h2>
             <iframe
+              loading="lazy"
               className="overflow-hidden rounded-2xl"
               width="343"
               height="610"
               src="https://www.youtube.com/embed/mcF12tmkEmE"
-              title="découverte du magasin esprit primeur - BISCARROSSE"
+              title="Découverte du magasin Esprit Primeur"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
           </div>
