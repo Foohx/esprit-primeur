@@ -87,12 +87,8 @@ export default function Page() {
               <p>
                 {`Les règlement des commandes s'effectue :`}
                 <ul>
-                  <li>
-                    {`- par chèque (sur présentation de la carte d'identité)`}
-                  </li>
                   <li>{`- par carte bancaire`}</li>
                   <li>{`- en espèce`}</li>
-                  <li>{`- chèque Beegift`}</li>
                 </ul>
               </p>
               <p>{`Aucun autre moyen de paiement ne sera accepté.`}</p>
@@ -176,34 +172,19 @@ export default function Page() {
                 {`Le risque du transport est supporté en totalité par l'acheteur.`}
               </p>
               <p>
-                {`La SARL ESPACE FRAICHEUR ayant deux points de vente, les
-                livraisons de paniers fruits et légumes ne seront pas majorés de
+                {`La SARL ESPACE FRAICHEUR se situant sur la commune de Biscarrosse, 
+                les livraisons de paniers de fruits et légumes ne seront pas majorés de
                 frais de transport dans une limite raisonnable de déplacement.`}
               </p>
               <p>
-                {`Les livraisons de marchandises dans les communes suivantes
-                BISCARROSSE - PARENTIS EN BORN - CESTAS - PESSAC - CANÉJAN -
-                LEOGNAN - BORDEAUX seront exonérée de frais de transport. Pour
-                les autres communes un forfait de 5 euros sera applicable pour
-                toute commande.`}
+                {`Les livraisons sur les communes de Biscarrosse, Parentis-en-Born et Gastes 
+                seront exonérées de frais de transport. Pour toutes autres communes, les frais 
+                seront calculés en fonction des kilomètres parcourus.`}
               </p>
               <p>
-                {`Pour les commandes et livraisons d'Apicius Bordeaux, des frais
-                de transport seront majorés au coût de la composition :`}
-                <ul>
-                  <li>
-                    {`- livraison à 20 km autour du point de vente, livraison
-                    gratuite.`}
-                  </li>
-                  <li>
-                    {`- forfait de 5 euros pour toute livraison à effectuer à plus
-                    de 20 km du point de vente et par tranche de 10 km.`}
-                  </li>
-                  <li>
-                    {`- livraison offerte pour toute commande HT de plus de 350
-                    euros.`}
-                  </li>
-                </ul>
+                {`Pour les livraisons d'Apicius Bordeaux, les frais applicables sont de 25€ pour 
+                les livraisons sur Bordeaux et Bordeaux Métropole. Au-delà, ils sont calculés sur 
+                la base de 0,40€ par kilomètre parcouru.`}
               </p>
             </div>
             <div className="space-y-4">
@@ -235,7 +216,7 @@ export default function Page() {
             </div>
           </div>
           <div className="space-y-4">
-            <p className="underline">{`Fait à Cestas, le 8 mars 2021`}</p>
+            <p className="underline">{`Fait à Biscarrosse, le 17 avril 2023.`}</p>
           </div>
         </section>
       </main>

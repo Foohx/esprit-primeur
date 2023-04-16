@@ -30,7 +30,7 @@ export default function Page() {
               </span>
               <span>
                 <span className="font-semibold">{`Siège social : `}</span>
-                {`12 Chemin des Boutiques - 33610 CESTAS`}
+                {`91 Avenue Georges Clémenceau, 40600 Biscarrosse`}
               </span>
             </div>
             <div>
