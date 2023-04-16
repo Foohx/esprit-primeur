@@ -57,7 +57,7 @@ export default function Page() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="bg-[url('/images/hero.jpg')] bg-cover bg-no-repeat bg-center h-[85vh] overflow-hidden">
+        <section className="bg-[url('/images/hero.webp')] bg-cover bg-no-repeat bg-center h-[85vh] overflow-hidden">
           <div
             className={classNames(
               "bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-black/40 to-black/80",
@@ -116,10 +116,10 @@ export default function Page() {
           <div className="flex flex-col gap-y-8 lg:block lg:flex-none lg:gap-y-0">
             <div className="w-full h-[500px] lg:float-left lg:mr-8 lg:mb-4 lg:w-[40%]">
               <Image
-                src="/images/about.jpg"
+                src="/images/about.webp"
                 width={700}
                 height={700}
-                alt="Test"
+                alt="Natalia et Théophile tiennent respectivement le trophée et le titre de Talent Fruits et Légumes 2022."
                 className="object-cover h-full w-full object-top lg:object-center rounded-2xl"
               />
             </div>
@@ -211,10 +211,10 @@ export default function Page() {
           <div className="max-w-7xl mx-auto h-[40vh] max-h-[300px] px-4">
             <div className="rounded-2xl overflow-hidden h-full w-full relative group">
               <Image
-                src="/images/shop.jpg"
-                alt=""
+                src="/images/shop.webp"
+                alt="Entrée du magasin"
                 width={800}
-                height={500}
+                height={600}
                 className="object-cover w-full h-full"
               />
               <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-black/0 group-hover:opacity-0 transition-opacity duration-300 flex items-end">
@@ -318,6 +318,7 @@ export default function Page() {
             </div>
             <div className="h-[400px] lg:h-auto lg:flex-1">
               <iframe
+                title="Localisation du magasin sur Google Maps"
                 className="w-full h-full overflow-hidden rounded-2xl"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1425.409654113128!2d-1.166560641278076!3d44.39583079999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5480831e4e94e1%3A0x389b8b0ca2031dfb!2s91%20Av.%20Georges%20Clemenceau%2C%2040600%20Biscarrosse!5e0!3m2!1sfr!2sfr!4v1680431157838!5m2!1sfr!2sfr"
                 loading="lazy"
