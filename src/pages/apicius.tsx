@@ -44,7 +44,7 @@ export default function Page() {
       <Header />
       <main className="space-y-16 mb-16 lg:space-y-32 lg:mb-32">
         {/* Hero */}
-        <section className="bg-[url('/images/apicius/hero.jpg')] bg-cover bg-no-repeat bg-center h-[85vh]">
+        <section className="bg-[url('/images/apicius/hero.webp')] bg-cover bg-no-repeat bg-center h-[85vh]">
           <div
             className={classNames(
               "bg-black/70",
@@ -95,7 +95,7 @@ export default function Page() {
             </div>
             <div className="relative overflow-hidden rounded-2xl w-full h-[500px] md:w-[45%] md:h-auto">
               <Image
-                src="/images/apicius/about.png"
+                src="/images/apicius/about.webp"
                 width={400}
                 height={700}
                 alt="Photo de Natalia BENOIST"
@@ -117,9 +117,9 @@ export default function Page() {
                 className="rounded-2xl overflow-hidden relative h-64 group"
               >
                 <Image
-                  src={`${product.assets}/overview.jpg`}
-                  alt=""
-                  height={500}
+                  src={`${product.assets}/overview.webp`}
+                  alt={`Aperçu : ${product.name}`}
+                  height={533}
                   width={800}
                   className="object-cover object-center w-full h-full"
                 />
