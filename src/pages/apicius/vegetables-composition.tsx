@@ -23,6 +23,9 @@ export default function Page() {
         value={{
           name: "Composition de crudités",
           assets: "/images/apicius/products/vegetables-composition",
+          assetsConfig: {
+            detailsExtension: "webp",
+          },
         }}
         renderDetails={
           <p>

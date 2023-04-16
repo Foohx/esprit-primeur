@@ -23,6 +23,9 @@ export default function Page() {
         value={{
           name: "Composition de fruits",
           assets: "/images/apicius/products/fruits-composition",
+          assetsConfig: {
+            detailsExtension: "webp",
+          },
         }}
         renderDetails={
           <p>

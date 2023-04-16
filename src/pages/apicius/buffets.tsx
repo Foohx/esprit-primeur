@@ -24,7 +24,7 @@ export default function Page() {
           name: "Les buffets",
           assets: "/images/apicius/products/buffets",
           assetsConfig: {
-            detailsExtension: "jpg",
+            detailsExtension: "webp",
           },
         }}
         renderDetails={

@@ -24,7 +24,7 @@ export default function Page() {
           name: "Petits plus",
           assets: "/images/apicius/products/extras",
           assetsConfig: {
-            detailsExtension: "jpg",
+            detailsExtension: "webp",
           },
         }}
         renderDetails={

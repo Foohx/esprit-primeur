@@ -13,7 +13,7 @@ export type _Product = {
   name: string;
   assets: string;
   assetsConfig?: {
-    detailsExtension?: "jpg" | "png" | "jpeg" | "gif";
+    detailsExtension?: "jpg" | "png" | "jpeg" | "gif" | "webp";
   };
 };
 
@@ -37,8 +37,8 @@ export default function ProductPage({
             src={`${value.assets}/details.${
               value.assetsConfig?.detailsExtension ?? "jpg"
             }`}
-            alt=""
-            width={800}
+            alt={`Photo de ${value.name}`}
+            width={1000}
             height={500}
             className="object-cover w-full h-full"
           />
