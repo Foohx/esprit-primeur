@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   swcMinify: true,
-  output: "export",
-  distDir: "dist",
-  images: {
-    unoptimized: true,
-  },
+  // output: "export",
+  // distDir: "dist",
+  // images: {
+  // unoptimized: true,
+  // },
   reactStrictMode: true,
   webpack(config) {
     // Grab the existing rule that handles SVG imports
