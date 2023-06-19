@@ -212,7 +212,7 @@ export default function Page() {
           <div className="max-w-7xl mx-auto h-[40vh] max-h-[300px] px-4">
             <div className="rounded-2xl overflow-hidden h-full w-full relative group">
               <Image
-                src="/images/shop.webp"
+                src="/images/shop.jpg"
                 alt="Entrée du magasin"
                 width={800}
                 height={600}
@@ -257,13 +257,13 @@ export default function Page() {
                   </Link>
                   <Link
                     className="flex gap-x-1 text-primary-600 group"
-                    href="mailto:popaulbisca@gmail.com"
+                    href="mailto:espritprimeur40@gmail.com"
                   >
                     <div>
                       <IconMail />
                     </div>
                     <span className="font-semibold group-hover:underline">
-                      popaulbisca@gmail.com
+                      espritprimeur40@gmail.com
                     </span>
                   </Link>
                 </div>
